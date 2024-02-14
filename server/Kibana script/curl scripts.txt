@@ -1,0 +1,10 @@
+PUT  /monqa-prod-latest
+{
+  "mappings": {
+    "type_name": {
+        "properties": {
+              "rating":    { "type": "integer" }
+          }
+      }
+  }
+}

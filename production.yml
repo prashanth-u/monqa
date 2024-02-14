@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+    client:
+        build: 
+            context: ./client
+            args:
+                - NODE_ENV=production
+        depends_on: 
+            - server
+            - doc_search
+        environment:
+            - NODE_ENV=production
+        restart: on-failure
+        stdin_open: true
+        volumes:
+            - /usr/src/app/node_modules
+            # - build-files:/usr/src/app/build        # FIXME
+    server:
+        build: ./server
+        environment:
+            - NODE_ENV=production
+        restart: always
+        volumes:
+            - /usr/src/app/node_modules
+    doc_search:
+        build: ./doc_search
+        restart: always
+    nginx:
+        build: 
+            context: ./nginx
+            args:
+                - NODE_ENV=production
+        depends_on: 
+            - client
+            - server
+            - doc_search
+        ports:
+            - 80:80
+            - 443:443
+        restart: always
+        volumes:
+            - /root/.acme.sh/monqa.io:/usr/src/app:ro
+            # - build-files:/var/www/monqa:ro     # FIXME
+
+# FIXME
+# volumes: 
+#     build-files:

@@ -1,0 +1,276 @@
+.nlpContainer
+{
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 10px;
+    height: auto;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+}
+
+.questionContainer
+{
+float: left;
+    width: 30%;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 1%;
+    overflow-y: auto;
+    background-color: #f1f2f4;
+    border: 1px solid grey;
+}
+
+.questionContainerMain
+{
+height: auto;
+    width: 100%;
+    display: inline-block;
+    }
+
+.referencesContainer
+{
+	height: auto;
+
+}
+
+.headerText
+{
+	font-size: 29px;
+    color: black;
+    height: 23px;
+    margin-left: 43%;
+    width: 11%;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.nlpReferences
+{
+    height: auto;
+    width: 88%;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top: 12px;
+    background-color: white;
+}
+
+.refElements
+{
+    color: blue;
+    margin-left: 2%;
+    cursor: pointer;
+    margin-top: 5px;
+    float:left;
+    display: inline-block;}
+
+.reviewBox
+{
+width: 35%;
+    margin-left: 32%;
+    height: 50px;
+    margin-top: 14px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    background-color: #d4d6d4;
+}
+
+.reviewButton1
+{
+display: inline-block;
+    float: left;
+    margin-top: 16px;
+    width: 21%;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #57bf55;
+    cursor: pointer;
+        color: white;
+    font-weight: bold;
+}
+
+.reviewButton2
+{
+	    display: inline-block;
+	    float:left;
+    margin-top: 16px;
+    width: 21%;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #9ead1e;
+        cursor:pointer;
+            color: white;
+    font-weight: bold;
+
+}
+
+.reviewButton3
+{
+	       display: inline-block;
+    float: left;
+    margin-top: 16px;
+    width: 20%;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #b1454a;
+    cursor: pointer;
+        color: white;
+    font-weight: bold;
+
+}
+
+.onSuccess
+{
+        display: inline-block;
+    float: left;
+    margin-top: 16px;
+    width: 89%;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #21ba45;
+    cursor: pointer;
+}
+
+.onFailed
+{
+        display: inline-block;
+    float: left;
+    margin-top: 16px;
+    width: 89%;
+    margin-left: 5%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+}
+
+.questionNlp
+{
+    color: #090950;
+    font-size: 11px;
+}
+
+.answerNlp
+{
+    color: green;
+    font-size: 11px;
+}
+
+.searchBarNlp
+{
+width: 100%;
+    margin-left: 2.5%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.askMeText
+{
+    float: left;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 1vw;
+}
+
+.pageDetails
+{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3%;}
+
+.refDetailContainer
+{
+    height: 20px;
+    width: 100%;
+}
+
+.rateMe
+{
+        margin-left: 3%;
+    float: left;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.noReferences
+{
+        height: 40px;
+    padding: 9px;
+    color: blue;
+    margin-left: 2%;
+}
+
+.loadingAssistant
+{
+        width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.docStyle
+{
+    width: 70%;
+    margin-left: 10%;
+    color: blue;
+    margin-top: 10px;
+    height: 18px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fileContainer
+{
+        height: 300px;
+            border-radius:20px;
+
+    overflow-y: auto;
+    background-color: #efe9e9;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+
+.uploadButton
+{
+    background-color: #71a971;
+    width: 8%;
+    text-align: center;
+    height: 27px;
+    margin-left: 47%;
+    border-radius: 7px;
+    padding-top: 4px;
+    cursor:pointer;
+        margin-bottom: 14px;
+}
+
+.inputFile
+{
+        margin-left: 44%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.deleteButton
+{
+    width: 5%;
+    background-color: red;
+    height: 19px;
+    float: right;
+    font-size: 8px;
+    color: white;
+    text-align: center;
+    margin-right: 7%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

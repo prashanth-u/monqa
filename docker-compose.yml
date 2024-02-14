@@ -1,0 +1,40 @@
+version: '3'
+services:
+    client:
+        build: 
+            context: ./client
+            args:
+                - NODE_ENV=development
+        depends_on: 
+            - server
+            - doc_search
+        environment:
+            - NODE_ENV=development
+        restart: always
+        stdin_open: true
+        volumes:
+            - ./client:/usr/src/app
+            - /usr/src/app/node_modules
+    server:
+        build: ./server
+        environment:
+            - NODE_ENV=development
+        restart: always
+        volumes:
+            - ./server:/usr/src/app
+            - /usr/src/app/node_modules
+    doc_search:
+        build: ./doc_search
+        restart: always
+    nginx:
+        build: 
+            context: ./nginx
+            args:
+                - NODE_ENV=development
+        depends_on: 
+            - client
+            - server
+            - doc_search
+        ports:
+            - 3000:80
+        restart: always

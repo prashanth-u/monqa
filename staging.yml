@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+    client:
+        build:
+            context: ./client
+            args:
+                - NODE_ENV=staging
+        environment: 
+            - NODE_ENV=staging
+        volumes:
+            - /usr/src/app/node_modules
+
+# TODO: tests for server
